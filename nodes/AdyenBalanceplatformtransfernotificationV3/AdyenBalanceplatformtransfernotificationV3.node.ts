@@ -3,14 +3,14 @@ import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from '
 
 export class AdyenBalanceplatformtransfernotificationV3 implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'adyen-balanceplatformtransfernotification-v3',
+		displayName: 'Adyen Balanceplatformtransfernotification V3',
 		name: 'N8nDevAdyenBalanceplatformtransfernotificationV3',
 		icon: { light: 'file:./adyen-balanceplatformtransfernotification-v3.svg', dark: 'file:./adyen-balanceplatformtransfernotification-v3.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Adyen sends notifications through webhooks to inform your system about incoming and outgoing transfers in your platform',
-		defaults: { name: 'adyen-balanceplatformtransfernotification-v3' },
+		description: 'Adyen sends webhook notifications for platform transfers.',
+		defaults: { name: 'Adyen Balanceplatformtransfernotification V3' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
